@@ -1,0 +1,16 @@
+machine:
+    services:
+        - docker
+
+checkout:
+    post:
+        - git clone git@github.com:NicolasTr/ntr-continuous-integration.git
+
+dependencies:
+    override:
+        - sa-continuous-integration/docker/credentials.sh
+        - sa-continuous-integration/docker/build.sh
+
+test:
+    override:
+        - echo "Test!"
