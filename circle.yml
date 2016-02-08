@@ -8,8 +8,8 @@ checkout:
 
 dependencies:
     override:
-        - sa-continuous-integration/docker/credentials.sh
-        - sa-continuous-integration/docker/build.sh
+        - ntr-continuous-integration/docker/credentials.sh
+        - ntr-continuous-integration/docker/build.sh
 
 test:
     override:
