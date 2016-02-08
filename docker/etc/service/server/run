@@ -1,0 +1,8 @@
+#!/bin/bash -ex
+
+env
+sleep 1
+echo "server - run"
+
+cd /srv/app/
+exec node test.js 2>&1
